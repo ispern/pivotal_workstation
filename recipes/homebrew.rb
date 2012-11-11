@@ -44,7 +44,7 @@ execute "homebrew tap homebrew/dupes" do
 end
 
 execute "homebrew tap josegonzalez/homebrew-php" do
-  command "brew tap zjosegonzalez/homebrew-php"
+  command "brew tap josegonzalez/homebrew-php"
 end
 
 directory "/usr/local/sbin" do
