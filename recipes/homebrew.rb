@@ -39,9 +39,12 @@ ruby_block "Check that homebrew is running & working" do
   end
 end
 
-execute "homebrew tap php" do
+execute "homebrew tap homebrew/dupes" do
   command "brew tap homebrew/dupes"
-  command "brew tap josegonzalez/homebrew-php"
+end
+
+execute "homebrew tap josegonzalez/homebrew-php" do
+  command "brew tap zjosegonzalez/homebrew-php"
 end
 
 directory "/usr/local/sbin" do
